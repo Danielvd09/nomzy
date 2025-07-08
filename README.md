@@ -1,5 +1,36 @@
 # Nomzy – Surplus Food Marketplace
 
+---
+
+## 💖 For My Girlfriend: How to Use Nomzy
+
+Hi! This is a simple app to help you (or anyone) find and add surplus food deals nearby. You can use it on your phone, computer, or in your browser. Here’s how to get started:
+
+### What you can do
+- **See all surplus bags**: Browse a list of available food deals from local sellers.
+- **Add your own deal**: Click the plus (+) button to add a new surplus bag (fill in the form and save).
+- **View details**: Click on any deal to see more info (description, price, pickup time, and photo).
+- **Sign in/out**: You’ll need to sign in with your email to add or view deals.
+
+### How to run the app (for non-techies)
+1. **Web**: Just open the app in your browser (ask Daniel for the link if it’s live!).
+2. **Windows**: Double-click the app if you have it, or ask Daniel to send you the latest version.
+3. **Android/iOS**: Open the app on your phone (if installed). If not, ask Daniel for the install link.
+
+### How to add a deal
+1. Click the **+** button (top right).
+2. Fill in the form: title, description, price, pickup time, and (optionally) a photo URL.
+3. Click **Opslaan** (Save). Your deal will appear in the list!
+
+### How to see more info
+Click any deal in the list to see all details (including the pickup window and photo).
+
+---
+
+If you have any questions or want a new feature, just ask Daniel! 💬
+
+---
+
 ![Nomzy App Screenshots](screenshots/nomzy_screens.png)
 
 ## Turn Surplus Food Into Extra Income—Risk Free
