@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "863187816863",
+    "project_id": "nomzy-daa7e",
+    "storage_bucket": "nomzy-daa7e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863187816863:android:4c14d7dea8dffc319c2daa",
+        "android_client_info": {
+          "package_name": "com.example.nomzy_mvp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863187816863-kvc9dtrj6jbiqff5vlhjhr561o325ktp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiBmNG6rDuwyO61V-_PaYxi-_Lz2AxVWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863187816863-kvc9dtrj6jbiqff5vlhjhr561o325ktp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863187816863:android:37acaa456be64f859c2daa",
+        "android_client_info": {
+          "package_name": "com.nomzy.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863187816863-kvc9dtrj6jbiqff5vlhjhr561o325ktp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiBmNG6rDuwyO61V-_PaYxi-_Lz2AxVWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863187816863-kvc9dtrj6jbiqff5vlhjhr561o325ktp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
