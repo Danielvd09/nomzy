@@ -1,33 +1,102 @@
+---
+
+## 🚧 Nomzy TODO List: What’s Next?
+
+Here’s a clear breakdown of what’s left to do for Nomzy, split into **Frontend** and **Backend** tasks. Each item has a short explanation so you know exactly what it means and why it matters.
+
+### 🖌️ Frontend Tasks (UI/UX)
+
+- **1. Polish the Deals List UI**  
+  Make the deals list look more attractive: add images, better spacing, maybe a card layout or color accents. (See `DealsPage` in `main.dart`.)
+
+- **2. Add/Edit/Delete Deal Functionality**  
+  Right now, you can only add deals. Add the ability to edit or delete your own deals (e.g., with an edit button or swipe action).
+
+- **3. Deal Detail Page Improvements**  
+  Make the deal detail dialog/page more visual: bigger photo, clearer price breakdown, maybe a map for pickup location.
+
+- **4. User Profile Page**  
+  Add a page where users can see their own deals, edit their info, or sign out.
+
+- **5. Responsive Design**  
+  Make sure the app looks good on all screen sizes (mobile, tablet, desktop, web). Use Flutter’s layout widgets for this.
+
+- **6. Error Handling & Validation**  
+  Show friendly error messages if something goes wrong (e.g., failed to save a deal, bad input).
+
+- **7. (Optional) State Management**  
+  If the UI gets more complex, consider using Provider, Riverpod, or Bloc for cleaner state handling.
+
+- **8. (Optional) Animations & Polish**  
+  Add subtle animations for transitions, button presses, or loading states to make the app feel smooth.
+
+---
+
+### 🛠️ Backend Tasks (Firebase/Logic)
+
+- **1. Firestore Security Rules**  
+  Write rules so only logged-in users can add/edit/delete their own deals, and no one can mess with others’ data. (See Firebase console > Firestore > Rules.)
+
+- **2. Cloud Functions for Notifications**  
+  Add server-side code (TypeScript) to send push notifications when a new deal is added, or when someone reserves a bag. (See `functions/` folder.)
+
+- **3. Reservation/Order Flow**  
+  Add a way for users to reserve a deal (creates an order in Firestore), and for sellers to mark it as picked up. This needs both UI and backend logic.
+
+- **4. User Management**  
+  Store extra info about users (name, phone, etc.) in Firestore, and let users update their profile.
+
+- **5. (Optional) Image Uploads**  
+  Let users upload real photos (not just URLs) for deals, using Firebase Storage. Requires both frontend and backend changes.
+
+- **6. (Optional) Analytics & Metrics**  
+  Track how many deals are posted, reserved, picked up, etc. Use Firebase Analytics or custom Firestore fields.
+
+- **7. (Optional) Automated Deployments**  
+  Set up GitHub Actions to automatically deploy the app and backend when you push to main.
+
+---
+
+If you have questions about any task, just ask! Each item is a real-world feature that will make Nomzy more useful and robust.
+
+---
+
 # Nomzy – Surplus Food Marketplace
 
 ---
 
-## 💖 For My Girlfriend: How to Use Nomzy
 
-Hi! This is a simple app to help you (or anyone) find and add surplus food deals nearby. You can use it on your phone, computer, or in your browser. Here’s how to get started:
+## � Frontend Dev Quickstart (for my awesome girlfriend)
 
-### What you can do
-- **See all surplus bags**: Browse a list of available food deals from local sellers.
-- **Add your own deal**: Click the plus (+) button to add a new surplus bag (fill in the form and save).
-- **View details**: Click on any deal to see more info (description, price, pickup time, and photo).
-- **Sign in/out**: You’ll need to sign in with your email to add or view deals.
+Hey! Here’s what you need to know to get started fast as a frontend dev on this project:
 
-### How to run the app (for non-techies)
-1. **Web**: Just open the app in your browser (ask Daniel for the link if it’s live!).
-2. **Windows**: Double-click the app if you have it, or ask Daniel to send you the latest version.
-3. **Android/iOS**: Open the app on your phone (if installed). If not, ask Daniel for the install link.
+### 1. Run the app locally
+- `flutter pub get`
+- `flutterfire configure` (if you change bundle IDs)
+- `flutter run -d chrome` (web), `-d windows`, `-d android`, etc.
 
-### How to add a deal
-1. Click the **+** button (top right).
-2. Fill in the form: title, description, price, pickup time, and (optionally) a photo URL.
-3. Click **Opslaan** (Save). Your deal will appear in the list!
+### 2. Where’s the UI?
+- All main UI is in `lib/main.dart` (see: `DealsPage`, `AddDealPage`, `DealDetailDialog`).
+- Auth is handled with `firebase_ui_auth` (see `AuthGate`).
+- Firestore integration is direct (no state management yet).
 
-### How to see more info
-Click any deal in the list to see all details (including the pickup window and photo).
+### 3. How to change the design
+- Edit the widgets in `DealsPage` and `AddDealPage`.
+- You can add new pages, dialogs, or refactor to separate files if you want.
+- All UI is Material for now, but you can add your own style/components.
+
+### 4. Hot reload works everywhere
+- Just save and the UI updates instantly (web, desktop, mobile).
+
+### 5. Firebase
+- Auth and Firestore are already set up. If you want to add Storage (for real photo uploads), see `pubspec.yaml` and `main.dart`.
+
+### 6. Collaboration
+- Push to GitHub, open a PR, or just ping me for a review!
 
 ---
 
-If you have any questions or want a new feature, just ask Daniel! 💬
+If you want to refactor, add state management, or go wild with the UI, go for it! Ping me if you want backend endpoints or new Firestore fields. ❤️
 
 ---
 
